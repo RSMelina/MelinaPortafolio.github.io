@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Melina's World of Data - Sales Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <a href="index.html" class="logo">Massively</a> -->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Portfolio</a></li>
+							<!-- <li class="active"><a href="ABOUTME.html">About Me</a></li> -->
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/melina-roldan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://github.com/RSMelina" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Sales Analysis</h1>
+									<p>AtliQ, a computer hardware business, experienced a decline in sales between 2018 and 2020. In response, the Sales Director decided to invest in data analysis to streamline the process and avoid manually compiling Excel files to identify underlying issues.
+
+										He aims to discover the following insights: Top 5 Customers, Profit by Market, Sales Total, Revenue Total by Year and additional Insights.
+
+										With this data, he expects to make data-driven decisions to improve sales performance and reverse the declining trend.</p>
+								</header>
+								<div class="image main"><img src="https://image.cnbcfm.com/api/v1/image/105760445-1551156276225gettyimages-1073361328.jpeg?v=1551156327&w=1480&h=833&ffmt=webp&vtcrop=y" alt="" /></div>
+								<header>
+									<h2>SQL Query:</h2>
+									<p>
+										Data was already based in MySQL, so I conducted a brief exploratory analysis there, which allowed me to identify the cleaning needs of the database.
+									</p>
+								</header>
+								<header>
+									<h2>Tableau:</h2>
+									<p>Most of the data cleaning was done in Tableau, such as converting some transactions from USD to INR and removing markets outside of India.</p>
+								</header>
+								<h2>Insights:</h2>
+								<div class="row">
+									<div class="col-12 col-12-small">
+										<ul>
+											<li>Although most of the revenue comes from sales to Brick and Mortar customers, the reality is that the top profit markets generally have e-commerce customer.
+											</li>
+											<li>Of the markets that generate the best profit, the top two are sustained by a single e-commerce customer each. It might be good to create a profit graph by customer type, how does that sound?
+											</li>
+											<li>Divide and conquer(?) Not only do the top two markets with the best profit depend on a single customer, but the third market also depends on one, though this one is a physical customer. Each of these markets (cities) has a similar top products mix, but the number one selling product is different in each city. Perhaps a detailed analysis of these products and their main consumers could help us understand how to improve sales of these products in other cities or to customers who might have the same need but are not yet aware of the benefits of purchasing them.
+											</li>
+											<li>Product 053 has declined in sales from 2018 to 2020. Could this be due to internal issues, the presence of a better competitor in the market, or another external factor?
+											</li>
+										</ul>
+									</div>
+								</div>
+								<header>
+									<h2>Links:</h2>
+									<ul class="actions fit">
+										<li><a href="https://github.com/RSMelina/Sales_Analysis.git" class="button primary fit">GitHub</a></li>
+										<li><a href="https://public.tableau.com/views/SalesInsights_/Historia1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="button primary fit">Tableau Dashboard</a></li>
+									</ul>
+								
+
+
+
+
+								
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+						<!-- </section> -->
+						<section class="split contact">
+							<!-- <section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section> -->
+							<section>
+								<h3>Phone</h3>
+								<p>+52 (442) 127-1085</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:melinaroldn@gmail.com">melinaroldn@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/melina-roldan" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="https://github.com/RSMelina" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
