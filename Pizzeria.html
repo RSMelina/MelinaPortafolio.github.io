@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Melina's World of Data - Pizzeria</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <a href="index.html" class="logo">Massively</a> -->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Portfolio</a></li>
+							<!-- <li class="active"><a href="ABOUTME.html">About Me</a></li> -->
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/melina-roldan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://github.com/RSMelina" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Pizzeria SQL Project</h1>
+									<p>This pizzeria owner wants to digitalize their processes, starting with the back-end, to improve business management. The key points to monitor are: orders, inventory control, and staff.<br></p>
+										<p style="text-align: left;">The information they want to collect for orders includes: Item name, price, qty, customer name and delivery address</p>
+								</header>
+								<p style="margin-bottom: 1px;">To avoid redundancy and normalize the data, different tables will be created:</p>
+									<ul>
+										<li>Orders</li>
+										<li>Customers</li>
+										<li>Addresses</li>
+										<li>Items</li>
+									</ul>
+
+									<p>The owner seeks an “identifier” to know when to reorder ingredients. To do this, it's necessary to know the ingredients for pizzas and drinks, the quantity needed for each product, and the current stock levels. Therefore, the following tables will be added:</p>
+
+									<ul>
+										<li>Recipe</li>
+										<li>Inventory</li>
+										<li>Ingredients</li>
+									</ul>
+
+									<p>Additionally, they want to track who is working each shift and the actual cost of each pizza, including salaries. The following tables will be added:</p>
+
+									<ul>
+										<li>Staff</li>
+										<li>Shifts</li>
+										<li>Rotation</li>
+									</ul>
+								<div class="image main"><img src="https://i.pinimg.com/564x/bb/ba/9b/bbba9be1a4c25face2e30e06931be3e7.jpg" alt="" /></div>
+								<header>
+									<h2>SQL Query:</h2>
+									<p>Customized queries were created for each dashboard on MySQL; 
+										to create the Orders dashboard, the Orders table was joined with the Items and Address tables using LEFT JOINS.<br>
+										For stock control dashboard, the Orders table was joined with the Items table, then the Items table was joined with the Recipes table, and the Recipes table was joined with the Ingredients table, along with the Inventory table<br>
+										And finally, staff dashboard, the Rotation table was joined with the Staff table, and the Shifts table was joined with the Rotation table.<br></p>
+								</header>
+							
+								<h2>Looker Studio Visualizations:</h2>
+								<p>A Google Cloud Platform (GCP) instance was created, which enabled the execution of custom queries developed in MySQL that power the specific visualizations.<br>
+									Currently, it's connected to a CSV because the free credits on GCP have run out..
+								</p>
+								<div class="row">
+									<div class="col-12 col-12-small">
+										<ul>
+											<li><b>Orders Dashboard: </b>Is showing Total Orders, Total Sales, Total Items, AVG Order Value, Sales by Category, Top Selling Items, Orders by Hour, Sales by Hour, Orders by Address, Orders by Delivery/Pick Up.</li>
+											<li><b>Stock Control: </b>In very few visualizations is showing: Total qty by ingredient, Total cost of ingredients, Calculated cost of pizza, % stock remaining by ingredient.</li>
+											<li><b>Staff: </b>This is the simplest, which includes: Total Staff cost, Total hours worked, Hours worked by staff member, Cost per staff member.</li>
+										</ul>
+									</div>
+								</div>
+								<header>
+									<h2>Links:</h2>
+									<ul class="actions fit">
+										<li><a href="https://github.com/RSMelina/pizzeria.git" class="button primary fit">GitHub</a></li>
+										<li><a href="https://lookerstudio.google.com/reporting/db1d6acc-75d8-4ca0-8908-e563ff60a967" class="button primary fit">Looker Dashboard</a></li>
+									</ul>
+								
+
+
+
+
+								
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+						<!-- </section> -->
+						<section class="split contact">
+							<!-- <section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section> -->
+							<section>
+								<h3>Phone</h3>
+								<p>+52 (442) 127-1085</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:melinaroldn@gmail.com">melinaroldn@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/melina-roldan" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="https://github.com/RSMelina" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
